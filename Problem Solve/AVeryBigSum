@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Pracrtice2{
+    public static void main(String args[]) {
+        
+        Scanner sc = new Scanner(System.in);
+    
+        long n = sc.nextInt();
+       
+        
+        long sum =0;
+       
+        for (int i = 0; i < n; i++) {
+      
+            long value =sc.nextLong();
+            
+            sum=sum+value;
+        }
+        
+        System.out.println(sum);
+    }
+}
+
+// https://www.hackerrank.com/challenges/a-very-big-sum/problem
