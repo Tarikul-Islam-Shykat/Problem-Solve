@@ -1,0 +1,6 @@
+N=input()
+y=int(int(N)//365)
+h1=int(int(N)%365)
+m=int(h1/30)
+m1=int(h1%30)
+print(str(y)+' ano(s)\n'+str(m)+' mes(es)\n'+str(m1)+' dia(s)')
