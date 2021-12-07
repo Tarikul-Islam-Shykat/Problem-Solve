@@ -6,6 +6,7 @@ def catAndMouse(x, y, z):
     else:
         return "Cat A"
 
+    
 for _ in range(int(input())):
     x,y,z = map(int,input().split())
     print(catAndMouse(x, y, z))
