@@ -1,2 +1,2 @@
 Profile :
-🔥 https://www.hackerrank.com/shykatislam138 🔥
+ https://www.hackerrank.com/shykatislam138
