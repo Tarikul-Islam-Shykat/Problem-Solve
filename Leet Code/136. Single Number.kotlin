@@ -1,0 +1,45 @@
+class Solution {
+    fun singleNumber(nums: IntArray): Int {
+         if (nums.size == 1) return  nums[0]
+
+    Arrays.sort(nums)
+    var left_point = 0
+    var right_point = nums.size - 1
+    var count = 0
+
+    while (left_point < right_point){
+
+        // check the first left item
+        if (left_point == 0 && nums[left_point] != nums[left_point+1]){
+            return nums[left_point]
+        }
+        else if (right_point ==  nums.size - 1 && nums[right_point] != nums[ nums.size - 1 - 1]){
+            return nums[right_point]
+        }
+        else{
+
+            if(count ==0){
+                left_point ++
+                right_point --
+            }
+
+            if( nums[left_point] != nums[left_point+1] && nums[left_point] != nums[left_point-1]){
+                return nums[left_point]
+            }
+            else{
+                left_point ++ ;
+            }
+
+            if( nums[right_point] != nums[right_point+1] && nums[right_point] != nums[right_point-1]){
+                return nums[right_point]
+            }
+            else{
+                right_point -- ;
+            }
+        }
+        count ++;
+
+    }
+    return 0
+    }
+}
