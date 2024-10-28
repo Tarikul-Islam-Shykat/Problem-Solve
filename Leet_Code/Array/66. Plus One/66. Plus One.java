@@ -1,4 +1,5 @@
-static int[] plusOne(int[] digits) {
+class Solution {
+    public int[] plusOne(int[] digits) {
         for (int   i = digits.length-1; i >=0; i--){
             if(digits[i] == 9){
                 digits[i] = 0;
@@ -12,3 +13,4 @@ static int[] plusOne(int[] digits) {
         new_arr[0] = 1;
         return  new_arr;
     }
+}
