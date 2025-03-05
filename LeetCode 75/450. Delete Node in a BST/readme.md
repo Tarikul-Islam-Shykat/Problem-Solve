@@ -68,4 +68,19 @@ For example, given the tree:
 TreeNode root = buildTree(new int[]{5, 3, 8, 2, 4, 9, 1, 2});
 TreeNode updatedRoot = deleteNode(root, 3);
 
+The updated tree would be:
 
+         5
+        / \
+       4   8
+      / \   \
+     2   4   9
+        / \
+       1   2
+```
+## **Edge Cases**
+Empty Tree: If the tree is empty (root == null), return null because there is nothing to delete.
+
+Deleting Root Node: If the node to be deleted is the root, the function will correctly handle all cases and return the new root if needed.
+
+Non-Existent Node: If the node with the given value does not exist in the tree, the function returns the original tree unchanged.
